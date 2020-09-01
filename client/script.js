@@ -7,7 +7,7 @@ async function submitForm(e) {
     obj[field.name] = field.value;
     return obj;
   }, {});
-  await fetch("http://localhost:3001/smtp/send-mail", {
+  await fetch("https://smart-urban.herokuapp.com/smtp/send-mail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
