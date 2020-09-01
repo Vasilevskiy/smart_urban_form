@@ -11,6 +11,9 @@ app.options("/*", function (req, res) {
   res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
   res.sendStatus(200);
 });
+app.options("/smtp/send-mail", (req, res) => {
+  res.sendStatus(204);
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
