@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { sendMail } = require("./service/smtp");
+const { sendMail } = require("../service/smtp");
 const env = require("dotenv").config();
 
 var app = express();
