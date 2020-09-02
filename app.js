@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { sendMail } = require("../service/smtp");
+const { sendMail } = require("./service/smtp");
 const env = require("dotenv").config();
 
 var app = express();
@@ -23,10 +23,10 @@ app.post("/smtp/send-mail", (req, res) => {
   sendMail(req, res);
 });
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/client"));
 
 app.get("/", function (req, res) {
-  res.sendStatus(200);
+  res.sendFile(__dirname + "/client/index.html");
 });
 
 const port = process.env.PORT || 3001;
