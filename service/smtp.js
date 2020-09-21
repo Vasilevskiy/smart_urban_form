@@ -21,12 +21,10 @@ let MailGenerator = new Mailgen({
 });
 
 const sendMail = (req, res) => {
-  console.log(req.body);
-
   let response = {
     body: {
       name: `${req.body.credentials}`,
-      intro: `Организация: ${req.body.organisation}, Email: ${req.body.email}, Моб.Телефон: ${req.body.phone}`,
+      intro: `Email: ${req.body.email}, Моб.Телефон: ${req.body.phone}`,
     },
   };
 
