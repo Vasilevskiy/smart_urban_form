@@ -24,7 +24,7 @@ const sendMail = (req, res) => {
   let response = {
     body: {
       name: `${req.body.credentials}`,
-      intro: `Email: ${req.body.email}, Моб.Телефон: ${req.body.phone}`,
+      intro: `Моб.Телефон: ${req.body.phone}`,
     },
   };
 
