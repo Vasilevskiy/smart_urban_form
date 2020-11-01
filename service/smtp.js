@@ -37,6 +37,8 @@ const sendMail = (req, res) => {
     html: mail,
   };
 
+  console.log(`from: ${process.env.RECEIVER_EMAIL}`,)
+
   transporter
     .sendMail(message)
     .then(() => {
