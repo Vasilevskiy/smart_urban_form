@@ -2,11 +2,7 @@
   height: 100vh;
   display: flex;
   background-size: 400% 400%;
-  background: linear-gradient(
-    36deg,
-    rgba(54, 24, 112, 1) 0%,
-    rgba(190, 30, 231, 1) 100%
-  );
+  background-color: #61287e;
 
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
