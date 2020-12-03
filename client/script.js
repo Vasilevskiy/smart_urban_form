@@ -19,7 +19,7 @@ async function submitForm(e) {
 
 function downloadPDF() {
   var link = document.createElement("a");
-  link.href = "./public/28.10.20_smart_urban_test_print_2.pdf";
-  link.download = "28.10.20_smart_urban_test_print_2.pdf";
+  link.href = "./public/03.12.20_smart_urban.pdf";
+  link.download = "03.12.20_smart_urban.pdf";
   link.dispatchEvent(new MouseEvent("click"));
 }
